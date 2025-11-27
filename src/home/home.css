@@ -181,6 +181,18 @@ body {
       transform: translateX(-50%);
       border-radius: 19px;
       border: solid var(--principal) 1px;
+      display: flex;
+      justify-content: space-evenly;
+
+      .principal-nav-productos{
+        color: var(--principal);
+        /* font-family: "Californian FB"; */
+      }
+
+      .principal-nav-educacion{
+        color: var(--principal);
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
     }
 
     .principal-nav-linea{

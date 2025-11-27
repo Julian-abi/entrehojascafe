@@ -1,5 +1,14 @@
+@font-face{
+    font-family:"Californian FB";
+    src: url("../assets/fonts/californian-fb.ttf") format("truetype");
+}
+
 :root{
     --principal: #FFE6C8;
     --vinotinto: #4A0000;
     --gris:#808080;
+}
+
+body {
+  font-family: "Californian FB", serif;
 }

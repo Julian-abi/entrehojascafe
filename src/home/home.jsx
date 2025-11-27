@@ -30,6 +30,16 @@ const Home = () => {
         <div className='principal-video-presentación'>
         </div>
         <div className='principal-nav'>
+          <div className='principal-nav-productos'>
+            <p>Productos</p>
+          </div>
+          <div className='principal-nav-educacion'>
+            <p>Educación</p>
+          </div>
+          <div>
+            <p>Sobre Nosotros</p>
+          </div>
+          
         </div>
         <div className='principal-nav-linea'></div>
       </div>
