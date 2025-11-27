@@ -1,0 +1,57 @@
+.principal-nav {
+    width: 35%;
+    height: 10%;
+    background-color: var(--vinotinto);
+    position: fixed;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 19px;
+    border: solid var(--principal) 1px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1000;
+
+    .principal-nav-link {
+        text-decoration: none;
+        color: var(--principal);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+    }
+
+    .principal-nav-link:hover {
+        transform: scale(1.1);
+    }
+
+    .principal-nav-productos,
+    .principal-nav-educacion,
+    .principal-nav-item,
+    .principal-nav-inicio{
+        color: var(--principal);
+        font-family: "Californian FB", serif;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    
+    .principal-nav-productos p,
+    .principal-nav-educacion p,
+    .principal-nav-item p,
+    .principal-nav-inicio p{
+        margin: 0;
+    }
+}
+.principal-nav-linea {
+    width: 36%;
+    height: 12%;
+    position: fixed;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 19px;
+    border: solid var(--principal) 1px;
+    z-index: 999;
+}
+

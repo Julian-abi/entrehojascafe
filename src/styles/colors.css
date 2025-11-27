@@ -7,8 +7,12 @@
     --principal: #FFE6C8;
     --vinotinto: #4A0000;
     --gris:#808080;
-}
-
-body {
-  font-family: "Californian FB", serif;
+    --doradoclaro: #BE682F;
+    --azuloscuro: #02243F;
+    --rojooscuro: #680200;
+    --verdeoscuro: #0E352A;
+    --blanco: #FFFFFF;
+    --dorado: #D07916;
+    --beichi: #FFECD2;
+    --cafeclaro: #C68844;
 }

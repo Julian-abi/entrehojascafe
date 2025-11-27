@@ -3,15 +3,16 @@ import './home.css';
 import logo from '../assets/images/principal-barra-imagen.png';
 import hoja1 from '../assets/images/hoja-fondo.png';
 import hoja2 from '../assets/images/hoja-fondo2.png';
+import Navbar from '../components/navbar';
 
 const Home = () => {
   return (
     <>
       <div className='principal'>
         <div className='principal-barra'>
-          <div className="principal-barra-linea"></div>
-          <div className="principal-barra-circulo-izq"></div>
-          <div className="principal-barra-circulo-der"></div>
+          <div className="linea"></div>
+          <div className="izq"></div>
+          <div className="der"></div>
           <img src={hoja1} alt="..." className='hoja-fondo'/>
           <img src={hoja2} alt="..." className='hoja-fondo2'/>
           <img src={hoja1} alt="..." className='hoja-fondo3'/>
@@ -25,23 +26,19 @@ const Home = () => {
           <img src={hoja1} alt="..." className='hoja-fondo11'/>
           <img src={hoja2} alt="..." className='hoja-fondo12'/>
           <img src={hoja1} alt="..." className='hoja-fondo13'/> 
-          <img src={logo} alt="..." className='principal-barra-imagen'/>
+          <img src={logo} alt="..." className='imagen'/>
         </div>
         <div className='principal-video-presentación'>
         </div>
-        <div className='principal-nav'>
-          <div className='principal-nav-productos'>
-            <p>Productos</p>
-          </div>
-          <div className='principal-nav-educacion'>
-            <p>Educación</p>
-          </div>
-          <div>
-            <p>Sobre Nosotros</p>
-          </div>
-          
-        </div>
-        <div className='principal-nav-linea'></div>
+        <Navbar />
+      </div>
+      <div className='productos-iniciales'>
+        <div className='linea'></div>
+        <h2>ESENCIA CAFETERA</h2>
+        <div className='linea'></div>
+        <p>
+          Prueba esta nueva experiencia multisensorial única que conecta la historia, el aroma y el sabor del café.
+        </p>
       </div>
     </>
   )
