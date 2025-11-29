@@ -18,7 +18,7 @@ body {
       position: relative;
 
       & .linea {
-        position: absolute;
+        position: relative;
         top: 100%;
         left: 50%;
         transform: translateX(-50%);
@@ -28,7 +28,7 @@ body {
       }
 
       & .izq {
-        position: absolute;
+        position: relative;
         top: 90%;
         left: 19%;
         transform: translateX(-50%);

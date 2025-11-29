@@ -1,0 +1,20 @@
+.boton {
+    font-family: "Californian FB", serif;
+    font-style: italic;
+    font-size: 20px;
+    border-radius: 15px;
+    width: 120px;
+    height: 35px;
+    border-style: none;
+    cursor: pointer;
+
+    background-color: var(--bg);
+    color: var(--text);
+
+    transition: .3s ease;
+}
+
+.boton:hover {
+    background-color: var(--vinotinto);
+    color: var(--blanco);
+}

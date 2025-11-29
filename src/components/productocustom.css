@@ -1,0 +1,215 @@
+.producto-fondo {
+    background-color: var(--blanco);
+    width: 350px;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .azul {
+        background-color: var(--c);
+        width: 330px;
+        height: 440px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .-arriba {
+            width: 100%;
+            height: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            & .-izq {
+                position: relative;
+                top: 15px;
+                left: 4px;
+                width: 9%;
+                height: 1px;
+                background-color: var(--dorado);
+                transform: rotate(-40deg);
+            }
+
+            & .-lineadorada {
+                position: relative;
+                top: 5px;
+                width: 80%;
+                height: 1px;
+                background-color: var(--dorado);
+            }
+
+            & .-der {
+                position: relative;
+                top: 15px;
+                right: 4px;
+                width: 9%;
+                height: 1px;
+                background-color: var(--dorado);
+                transform: rotate(40deg);
+            }
+        }
+
+        & .-abajo {
+            width: 100%;
+            height: 1px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            & .-izq {
+                position: relative;
+                bottom: 19px;
+                left: 4px;
+                width: 9%;
+                height: 1px;
+                background-color: var(--dorado);
+                transform: rotate(40deg);
+            }
+
+            & .-lineadorada-abajo {
+                position: relative;
+                width: 80%;
+                height: 1px;
+                background-color: var(--dorado);
+                bottom: 10px;
+            }
+
+            & .-der {
+                position: relative;
+                bottom: 19px;
+                right: 4px;
+                width: 9%;
+                height: 1px;
+                background-color: var(--dorado);
+                transform: rotate(-40deg);
+            }
+        }
+
+
+
+        & .-contenido {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+
+            & .-lineadorada-izq {
+                position: relative;
+                left: 10px;
+                width: 1px;
+                height: 89%;
+                background-color: var(--dorado);
+                margin-bottom: 9px;
+            }
+
+            & .-lineadorada-der {
+                position: relative;
+                right: 10px;
+                width: 1px;
+                height: 89%;
+                background-color: var(--dorado);
+                margin-bottom: 9px;
+            }
+
+            & .-producto {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+
+                & .-imagenproducto {
+                    width: 70%;
+                    height: 65%;
+                    border-radius: 20px;
+                    background-color: var(--gris);
+                    margin-top: 10px;
+                    margin-bottom: 15px;
+                }
+
+                & .-informacionproducto {
+                    position: relative;
+                    top: 1px;
+                    width: 81%;
+                    height: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    & .-arriba {
+                        width: 100%;
+                        height: 15%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+
+                        & .-izqrelleno {
+                            position: absolute;
+                            top: 6px;
+                            left: 7px;
+                            width: 28px;
+                            height: 30px;
+                            background-color: var(--dorado);
+                            transform: rotate(-45deg);
+                        }
+
+                        & .-relleno{
+                            position: relative;
+                            width: 85%;
+                            height: 100%;
+                            background-color: var(--dorado);
+                            display: flex;
+                            flex-direction: column;
+                            z-index: 1;
+
+                            & .-con{
+                                width: 100%;
+                                height: 90%;
+                                display: flex;
+                                justify-content: space-evenly;
+                                
+                                & .-lineaconblanca{
+                                    width: 1px;
+                                    height: 100%;
+                                    background-color: var(--blanco);
+                                }
+                            }
+
+                            & .-lineablanca{
+                                position: relative;
+                                width: 100%;
+                                height: 1px;
+                                background-color: var(--blanco);
+                                top: 15px;
+                            }
+                        }
+
+                        & .-derrelleno{
+                            position: absolute;
+                            right: 7px;
+                            top: 6px;
+                            width: 28px;
+                            height: 30px;
+                            background-color: var(--dorado);
+                            transform: rotate(45deg);
+                        }
+                    }
+
+                    & .-abajo {
+                        width: 99%;
+                        height: 85%;
+                        background-color: var(--dorado);
+                    }
+                }
+            }
+        }
+    }
+}
