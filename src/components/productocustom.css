@@ -161,7 +161,7 @@
                             transform: rotate(-45deg);
                         }
 
-                        & .-relleno{
+                        & .-relleno {
                             position: relative;
                             width: 85%;
                             height: 100%;
@@ -170,29 +170,45 @@
                             flex-direction: column;
                             z-index: 1;
 
-                            & .-con{
+                            & .-con {
                                 width: 100%;
                                 height: 90%;
                                 display: flex;
-                                justify-content: space-evenly;
-                                
-                                & .-lineaconblanca{
-                                    width: 1px;
-                                    height: 100%;
-                                    background-color: var(--blanco);
+                                margin-left: 10px;
+
+                                & h3 {
+                                    position: relative;
+                                    font-family: "Californian FB", serif;
+                                    color: var(--blanco);
+                                    margin: 0;
+                                    font-size: 24px;
+                                    font-weight: normal;
+                                    top: 6px;
+                                    margin-left: 6px;
                                 }
+
+                                & .-lineaconblanca {
+                                    position: relative;
+                                    width: 1px;
+                                    height: 27px;
+                                    background-color: var(--blanco);
+                                    margin-left: 9px;
+                                    top: 7px;
+                                }
+
                             }
 
-                            & .-lineablanca{
+                            & .-lineablanca {
                                 position: relative;
                                 width: 100%;
                                 height: 1px;
                                 background-color: var(--blanco);
                                 top: 15px;
+                                z-index: 1;
                             }
                         }
 
-                        & .-derrelleno{
+                        & .-derrelleno {
                             position: absolute;
                             right: 7px;
                             top: 6px;
@@ -207,6 +223,25 @@
                         width: 99%;
                         height: 85%;
                         background-color: var(--dorado);
+
+                        & .-precio {
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            margin-top: 10px;
+                            gap: 3px;
+
+
+                            & h3 {
+                                font-family: "Californian FB", serif;
+                                margin: 0px;
+                                color: var(--blanco);
+                                font-weight: normal;
+                            }
+                        }
                     }
                 }
             }

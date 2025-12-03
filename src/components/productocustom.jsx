@@ -1,5 +1,6 @@
 import React from 'react';
 import './productocustom.css';
+import BotomCustom from './botomcustom';
 
 const ProductoCustom = ({ colorfondo }) => {
     return (
@@ -20,16 +21,20 @@ const ProductoCustom = ({ colorfondo }) => {
                                     <div className='-izqrelleno'></div>
                                     <div className='-relleno'>
                                         <div className='-con'>
-                                            <div>01</div>
+                                            <h3>01</h3>
                                             <div className='-lineaconblanca'></div>
-                                            <div>CACAO</div>
+                                            <h3>CACAO</h3>
                                         </div>
                                         <div className='-lineablanca'></div>
                                     </div>
                                     <div className='-derrelleno'></div>
                                 </div>
                                 <div className='-abajo'>
-
+                                    <div className='-precio'>
+                                            <h3>Cacao, Vainilla</h3>
+                                            <h3> <b>$50.000</b></h3>
+                                            <BotomCustom text='Añadir' bgColor='#FFECD2' textColor='#D07916' />
+                                        </div>
                                 </div>
                             </div>
                         </div>
