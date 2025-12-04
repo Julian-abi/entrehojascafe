@@ -41,8 +41,22 @@ const Home = () => {
         <p>
           Prueba esta nueva experiencia multisensorial única que conecta la historia, el aroma y el sabor del café.
         </p>
-        <ProductoCustom colorfondo='#02243F'/>
-        {/* <BotomCustom text='Ver todo' bgColor='#D07916' textColor='#FFECD2' onClick={() => {}} /> */}
+        <div className='-contenidoproductos'>
+          <ProductoCustom colorfondo='#02243F' nombrepro='Cacao' numero='01' descrip='Cacao, Vainilla' precio='50.000' />
+          <ProductoCustom colorfondo='#680200' nombrepro='Cacao' numero='02' descrip='Cacao, Vainilla' precio='40.000' />
+          <ProductoCustom colorfondo='#0E352A' nombrepro='Cacao' numero='03' descrip='Cacao, Vainilla' precio='45.000' />
+        </div>
+        <BotomCustom text='Ver todo' bgColor='#D07916' textColor='#FFECD2' onClick={() => { }} />
+      </div>
+      <div className='descripcionempresa'>
+        <div className='-titulo'>
+          <div className='linea'></div>
+          <h2>Café de alta calidad</h2>
+          <div className='linea'></div>
+        </div>
+        <div>
+          
+        </div>
       </div>
     </>
   )
