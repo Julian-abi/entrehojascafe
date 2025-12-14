@@ -5,6 +5,8 @@ import hoja1 from '../assets/images/hoja-fondo.png';
 import hoja2 from '../assets/images/hoja-fondo2.png';
 import imagen from '../assets/images/imagen.png';
 import imagen2 from '../assets/images/imagenblanca.png';
+import flornaranja from '../assets/images/flornaranja.png';
+import florcafe from '../assets/images/florcafe.png';
 import Navbar from '../components/navbar';
 import BotomCustom from '../components/botomcustom';
 import ProductoCustom from '../components/productocustom';
@@ -38,7 +40,7 @@ const Home = () => {
         <Navbar />
       </div>
       <div className='productos-iniciales'>
-        <div className='linea'></div>
+        <div className='linea'></div> 
         <h2>ESENCIA CAFETERA</h2>
         <div className='linea'></div>
         <p>
@@ -58,6 +60,10 @@ const Home = () => {
           <div className='linea'></div>
         </div>
         <div className='-conte'>
+          <div className='hojas-pri'>
+            <img src={florcafe} alt="..." className='florcafe'/>
+            <img src={hoja2} alt="..." className='flor' />
+          </div>
           <div className='-derconte'>
             <p>
               Contamos la historia detrás de cada grano, generando una conexión directa entre productor y consumidor, e impulsando un consumo consciente que apoya a las comunidades cafeteras locales
@@ -73,6 +79,10 @@ const Home = () => {
             <div className='-imagen3'>
               <CuadroCustom />
             </div>
+          </div>
+          <div className='hojas'>
+            <img src={flornaranja} alt="..." className='flornaranja'/>
+            <img src={hoja2} alt="..." className='flor' />
           </div>
         </div>
       </div>

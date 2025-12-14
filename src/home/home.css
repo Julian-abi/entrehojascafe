@@ -183,7 +183,7 @@ body {
 
     & .linea {
       height: 1px;
-      width: 25%;
+      width: 300px;
       background-color: var(--doradoclaro);
     }
 
@@ -196,6 +196,7 @@ body {
 
     & p {
       font-size: 20px;
+      text-align: center;
     }
 
     & .-contenidoproductos {
@@ -223,7 +224,7 @@ body {
 
       & .linea {
         height: 1px;
-        width: 25%;
+        width: 300px;
         background-color: var(--principal);
       }
 
@@ -244,9 +245,11 @@ body {
       
 
       & .-derconte {
-        width: 23%;
+        width: 30vw;
         position: relative;
-        top: 180px;
+        top: 160px;
+        right: 70px;
+        z-index: 3;
         & p {
           font-size: 22px;
           text-align: right;
@@ -255,25 +258,61 @@ body {
       }
 
       & .-izqconte{
-        width: 30%;
+        position: relative;
+        width: 30vw;
+        z-index: 2;
         & .-imagen1 {
-          position: relative;
-          bottom: 2%;
+          position: absolute;
           left: 70%;
         }
         & .-imagen2 {
-          position: relative;
-          top: 3%;
+          position: absolute;
+          bottom: 90px;
           left: 60%;
         }
         & .-imagen3 {
-          position: relative;
-          bottom: 55%;
-          left: 35%;
+          position: absolute;
+          bottom: 40%;
+          left: 20%;
+        }
+      }
+      & .hojas{
+        position: relative;
+        z-index: 1;
+        & .flornaranja{
+          position: absolute;
+          max-width: 200px;
+          right: 200px;
+          top: 60px;
+        }
+
+        & .flor{
+          position: absolute;
+          max-width: 200px;
+          transform: rotate(-90deg);
+          bottom: 50px;
+          right: 160px;
+        }
+      }
+
+      & .hojas-pri{
+        position: relative;
+        & .florcafe{
+          position: absolute;
+          max-width: 200px;
+          transform: rotate(100deg);
+          bottom: 10px;
+          left: -120px;
+        }
+
+        & .flor{
+          position: absolute;
+          max-width: 200px;
+          transform: rotate(-80deg);
+          top: -70px;
+          left: -200px;
         }
       }
     }
-
   }
-
 }

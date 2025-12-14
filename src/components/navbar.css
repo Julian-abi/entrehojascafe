@@ -1,6 +1,6 @@
 .principal-nav {
-    width: 35%;
-    height: 10%;
+    width: 470px;
+    height: 60px;
     background-color: var(--vinotinto);
     position: fixed;
     bottom: 3%;
@@ -44,8 +44,8 @@
     }
 }
 .principal-nav-linea {
-    width: 36%;
-    height: 12%;
+    width: 480px;
+    height: 70px;
     position: fixed;
     bottom: 2%;
     left: 50%;
