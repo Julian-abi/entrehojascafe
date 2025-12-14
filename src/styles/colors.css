@@ -3,6 +3,11 @@
     src: url("../assets/fonts/californian-fb.ttf") format("truetype");
 }
 
+@font-face{
+    font-family:"Lato-Regular";
+    src: url("../assets/fonts/Lato-Regular.ttf") format("truetype");
+}
+
 :root{
     --principal: #FFE6C8;
     --vinotinto: #4A0000;
@@ -15,4 +20,5 @@
     --dorado: #D07916;
     --beichi: #FFECD2;
     --cafeclaro: #C68844;
+    --redesbotom : #FED4A5;
 }

@@ -242,14 +242,16 @@ body {
       display: flex;
       gap: 30px;
       justify-content: center;
-      
+
 
       & .-derconte {
+        font-family: "Lato-Regular", sans-serif;
         width: 30vw;
         position: relative;
         top: 160px;
         right: 70px;
         z-index: 3;
+
         & p {
           font-size: 22px;
           text-align: right;
@@ -257,36 +259,43 @@ body {
         }
       }
 
-      & .-izqconte{
+      & .-izqconte {
         position: relative;
         width: 30vw;
         z-index: 2;
+
         & .-imagen1 {
           position: absolute;
           left: 70%;
         }
+
         & .-imagen2 {
           position: absolute;
           bottom: 90px;
           left: 60%;
         }
+
         & .-imagen3 {
           position: absolute;
           bottom: 40%;
           left: 20%;
         }
+
+
       }
-      & .hojas{
+
+      & .hojas {
         position: relative;
         z-index: 1;
-        & .flornaranja{
+
+        & .flornaranja {
           position: absolute;
           max-width: 200px;
-          right: 200px;
+          right: 150px;
           top: 60px;
         }
 
-        & .flor{
+        & .flor {
           position: absolute;
           max-width: 200px;
           transform: rotate(-90deg);
@@ -295,9 +304,10 @@ body {
         }
       }
 
-      & .hojas-pri{
+      & .hojas-pri {
         position: relative;
-        & .florcafe{
+
+        & .florcafe {
           position: absolute;
           max-width: 200px;
           transform: rotate(100deg);
@@ -305,12 +315,172 @@ body {
           left: -120px;
         }
 
-        & .flor{
+        & .flor {
           position: absolute;
           max-width: 200px;
           transform: rotate(-80deg);
           top: -70px;
           left: -200px;
+        }
+      }
+    }
+  }
+
+  .caracteristicas {
+    height: auto;
+    background-color: var(--dorado);
+    display: flex;
+    flex-direction: column;
+
+    & .sostenibilidad {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      gap: 20px;
+
+      & .contenido {
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .linea {
+          height: 1px;
+          width: 400px;
+          background-color: var(--principal);
+        }
+
+        & h2 {
+          letter-spacing: 5px;
+          color: var(--principal);
+          margin: 5px;
+          font-weight: normal;
+          font-family: "Californian FB", serif;
+        }
+
+        & p {
+          font-family: "Lato-Regular", sans-serif;
+          font-size: 20px;
+          text-align: center;
+          width: 50%;
+        }
+      }
+
+      & .imagenes {
+        width: 50%;
+        height: auto;
+        position: relative;
+
+        & .imagen1 {
+          position: absolute;
+          left: 55%;
+          top: -70px;
+          transform: translateX(-50%);
+          width: 300px;
+        }
+
+        & .imagen2 {
+          position: absolute;
+          left: 26%;
+          top: -30px;
+          transform: translate(-50%, -50%) rotate(-10deg);
+          max-width: 300px;
+        }
+      }
+    }
+
+    & .autenticidad {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & .linea {
+        height: 1px;
+        width: 400px;
+        background-color: var(--principal);
+      }
+
+      & h2 {
+        letter-spacing: 5px;
+        color: var(--principal);
+        margin: 5px;
+        font-weight: normal;
+        font-family: "Californian FB", serif;
+      }
+
+      & p {
+        font-family: "Lato-Regular", sans-serif;
+        font-size: 20px;
+        text-align: center;
+        width: 30%;
+      }
+    }
+
+    & .estetica {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      gap: 20px;
+      margin-bottom: 70px;
+
+      & .imagenes {
+        width: 50%;
+        height: auto;
+        position: relative;
+
+        & .imagen1 {
+          position: absolute;
+          left: -60px;
+          top: -120px;
+          transform: translateX(-50%);
+          width: 300px;
+        }
+
+        & .imagen2 {
+          position: absolute;
+          left: 50%;
+          top: 60px;
+          transform: translate(-50%, -50%) rotate(-10deg);
+          max-width: 300px;
+        }
+      }
+
+      & .contenido {
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 30px;
+
+        & .linea {
+          height: 1px;
+          width: 400px;
+          background-color: var(--principal);
+        }
+
+        & h2 {
+          letter-spacing: 5px;
+          color: var(--principal);
+          margin: 5px;
+          font-weight: normal;
+          font-family: "Californian FB", serif;
+        }
+
+        & p {
+          font-family: "Lato-Regular", sans-serif;
+          font-size: 20px;
+          text-align: center;
+          width: 50%;
         }
       }
     }
