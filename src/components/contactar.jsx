@@ -7,6 +7,7 @@ import RedesBotom from './redesbotom';
 import instagram from '../../public/Instagram.png';
 import tiktok from '../../public/TikTok.png';
 import whatsapp from '../../public/WhatsApp.png';
+import Carousel from './carrusel';
 
 const Contactar = () => {
 
@@ -22,7 +23,7 @@ const Contactar = () => {
                 <h2>Contactanos</h2>
                 <div className='linea'></div>
                 <div className='redescontenido'>
-                    <CuadroLargo />
+                    <Carousel />
                     <BotomCustom text='Ver Todo' bgColor='#D07916' textColor='#FFECD2' onClick={() => { }} />
                     <div className='mirar'>
                         {redes.map((red, index) => (
