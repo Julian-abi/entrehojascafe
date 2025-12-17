@@ -1,10 +1,5 @@
-/* =========================
-   CONTENEDOR DEL CARRUSEL
-========================= */
-/* Recorta lo que sobresale */
-
 .color-carousel {
-  overflow: hidden;          /* permite superposición */
+  overflow: hidden;         
 }
 
 .swiper {
@@ -13,33 +8,22 @@
   padding-bottom: 20px;
 }
 
-/* =========================
-   FLECHAS
-========================= */
-
-/* Flechas blancas */
 .color-carousel .swiper-button-next,
 .color-carousel .swiper-button-prev {
-  color: #ffffff;          /* color base */
+  color: #ffffff;          
 }
 
-/* Asegura que el ícono también sea blanco */
 .color-carousel .swiper-button-next::after,
 .color-carousel .swiper-button-prev::after {
   color: #ffffff;
 }
 
-/* =========================
-   SLIDES (CAPAS Y TRANSICIÓN)
-========================= */
-/* TODOS ocultos por defecto */
 .color-carousel .swiper-slide {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* SOLO los 3 visibles */
 .color-carousel .swiper-slide-active,
 .color-carousel .swiper-slide-prev,
 .color-carousel .swiper-slide-next {
@@ -47,21 +31,15 @@
   pointer-events: auto;
 }
 
-/* Centro al frente */
 .color-carousel .swiper-slide-active {
   z-index: 10;
 }
 
-/* Laterales atrás */
 .color-carousel .swiper-slide-prev,
 .color-carousel .swiper-slide-next {
   z-index: 5;
   opacity: 0.6;
 }
-
-/* =========================
-   CARDS (CUADROS DE COLOR)
-========================= */
 
 .color-box {
   height: 450px;
@@ -69,10 +47,6 @@
   box-shadow: var(--blanco);
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
-
-/* =========================
-   ESCALAS (EFECTO PROFUNDIDAD)
-========================= */
 
 .color-carousel .swiper-slide-active .color-box {
   transform: scale(1.0);

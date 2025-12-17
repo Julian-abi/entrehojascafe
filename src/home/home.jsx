@@ -1,5 +1,6 @@
 import React from 'react';
 import './home.css';
+import './homeresponsive.css';
 import logo from '../assets/images/principal-barra-imagen.png';
 import hoja1 from '../assets/images/hoja-fondo.png';
 import hoja2 from '../assets/images/hoja-fondo2.png';
@@ -17,8 +18,6 @@ import BotomCustom from '../components/botomcustom';
 import ProductoCustom from '../components/productocustom';
 import CuadroCustom from '../components/cuadrocustom';
 import CuadroCustomGir from '../components/cuadrocustomgirado';
-import CuadroLargo from '../components/cuadrolargo';
-import RedesBotom from '../components/redesbotom';
 import Contactar from '../components/contactar';
 
 

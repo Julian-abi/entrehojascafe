@@ -17,6 +17,12 @@ body {
       background-color: var(--vinotinto);
       position: relative;
 
+      & img{
+        max-width: 100%; 
+        height: auto;
+        object-fit: contain;
+      }
+
       & .linea {
         position: relative;
         top: 100%;
