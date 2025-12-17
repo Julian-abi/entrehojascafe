@@ -2,30 +2,31 @@ import React from 'react';
 import './home.css';
 import './homeresponsive.css';
 
-import hoja2 from '../assets/images/hoja-fondo2.png';
-import imagen from '../assets/images/imagen.png';
-import imagen2 from '../assets/images/imagenblanca.png';
-import flornaranja from '../assets/images/flornaranja.png';
-import florcafe from '../assets/images/florcafe.png';
-import redondo from '../assets/images/redondo.png';
-import servir from '../assets/images/servir.png';
-import estetica from '../assets/images/estetica.png';
-import granos from '../assets/images/granos.png';
-
-import Navbar from '../components/navbar/navbar';
-import BotomCustom from '../components/botomcustom/botomcustom';
-import ProductoCustom from '../components/productocustom/productocustom';
-import CuadroCustom from '../components/cuadrocustom/cuadrocustom';
-import CuadroCustomGir from '../components/cuadrocustomgirado/cuadrocustomgirado';
-import Contactar from '../components/contactar/contactar';
-import PrincipalBarra from '../components/principalbarra/principalbarra';
+import { 
+  florcafe, 
+  hoja2, 
+  imagen, 
+  imagen2, 
+  flornaranja, 
+  redondo, servir, 
+  estetica, 
+  granos } 
+  from '../assets/images';
+import {
+  Navbar,
+  BotomCustom,
+  ProductoCustom,
+  CuadroCustom,
+  CuadroCustomGir,
+  Contactar,
+  PrincipalBarra
+} from '../components';
 
 
 const Home = () => {
   return (
     <>
       <div className='principal'>
-        
         <PrincipalBarra />
         <div className='principal-video-presentación'>
         </div>
@@ -124,4 +125,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;

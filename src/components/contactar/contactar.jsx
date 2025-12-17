@@ -1,6 +1,5 @@
 import React from 'react';
 import './contactar.css';
-import CuadroLargo from '../cuadrolargo/cuadrolargo';
 import BotomCustom from '../botomcustom/botomcustom';
 import RedesBotom from '../redesbotom/redesbotom';
 

@@ -1,0 +1,44 @@
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .swiper {
+        max-width: 700px;
+        padding-bottom: 30px;
+    }
+
+    .color-box {
+        height: 380px;
+        border-radius: 24px;
+    }
+
+    .color-carousel .swiper-button-next::after,
+    .color-carousel .swiper-button-prev::after {
+        font-size: 26px;
+    }
+}
+
+/* Tablets pequeñas / Móviles grandes (481px - 767px) */
+@media screen and (max-width: 767px) {
+    .color-carousel {
+        padding: 0 10px;
+    }
+
+    .swiper {
+        max-width: 500px;
+        padding-bottom: 25px;
+    }
+
+    .color-box {
+        height: 320px;
+        border-radius: 20px;
+    }
+
+    .color-carousel .swiper-button-next::after,
+    .color-carousel .swiper-button-prev::after {
+        font-size: 22px;
+    }
+
+    /* Ajustar opacidad de slides laterales */
+    .color-carousel .swiper-slide-prev .color-box,
+    .color-carousel .swiper-slide-next .color-box {
+        opacity: 0.4;
+    }
+}

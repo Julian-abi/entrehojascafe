@@ -1,0 +1,9 @@
+export { default as hoja2 } from './hoja-fondo2.png';
+export { default as imagen } from './imagen.png';
+export { default as imagen2 } from './imagenblanca.png';
+export { default as flornaranja } from './flornaranja.png';
+export { default as florcafe } from './florcafe.png';
+export { default as redondo } from './redondo.png';
+export { default as servir } from './servir.png';
+export { default as estetica } from './estetica.png';
+export { default as granos } from './granos.png';
