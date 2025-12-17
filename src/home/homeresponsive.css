@@ -1,44 +1,7 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .principal-barra {
-        .hoja-fondo2 {
-            display: none;
-        }
-
-        .hoja-fondo4 {
-            display: none;
-        }
-    }
-
-    .principal-barra .hoja-fondo5 {
-        left: 0%;
-    }
+    
 }
 
 @media screen and (max-width: 767px) {
-    .principal-barra {
-
-        .izq {
-            display: none;
-        }
-
-        .der {
-            display: none;
-        }
-
-        .hoja-fondo,
-        .hoja-fondo2,
-        .hoja-fondo3,
-        .hoja-fondo4,
-        .hoja-fondo5,
-        .hoja-fondo6,
-        .hoja-fondo7,
-        .hoja-fondo8,
-        .hoja-fondo9,
-        .hoja-fondo10,
-        .hoja-fondo11,
-        .hoja-fondo12,
-        .hoja-fondo13 {
-            display: none;
-        }
-    }
+    
 }

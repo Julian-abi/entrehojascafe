@@ -1,6 +1,6 @@
 import React from 'react';
 import './productocustom.css';
-import BotomCustom from './botomcustom';
+import BotomCustom from '../botomcustom/botomcustom';
 
 const ProductoCustom = ({ colorfondo, numero, nombrepro, descrip, precio }) => {
     return (

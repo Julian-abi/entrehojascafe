@@ -1,13 +1,13 @@
 import React from 'react';
 import './contactar.css';
-import CuadroLargo from './cuadrolargo';
-import BotomCustom from './botomcustom';
-import RedesBotom from './redesbotom';
+import CuadroLargo from '../cuadrolargo/cuadrolargo';
+import BotomCustom from '../botomcustom/botomcustom';
+import RedesBotom from '../redesbotom/redesbotom';
 
-import instagram from '../../public/Instagram.png';
-import tiktok from '../../public/TikTok.png';
-import whatsapp from '../../public/WhatsApp.png';
-import Carousel from './carrusel';
+import instagram from '../../../public/Instagram.png';
+import tiktok from '../../../public/TikTok.png';
+import whatsapp from '../../../public/WhatsApp.png';
+import Carousel from '../carrusel/carrusel';
 
 const Contactar = () => {
 
