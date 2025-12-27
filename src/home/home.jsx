@@ -28,9 +28,9 @@ const Home = () => {
     <>
       <div className='principal'>
         <PrincipalBarra />
+        <Navbar />
         <div className='principal-video-presentación'>
         </div>
-        <Navbar />
       </div>
       <div className='productos-iniciales'>
         <div className='linea'></div>

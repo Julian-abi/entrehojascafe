@@ -36,46 +36,43 @@
 
 @media screen and (max-width: 767px) {
     .principal-barra{
+        height: 12%;
         .imagen{
-            width: 400px;
+            width: 300px;
             top: 100%;
         }
-        .izq,.der{
-            width: 15px;
-            height: 15px;
-            top: 92%;
+        .izq,
+        .der{
+            display: none;
         }
 
-        .izq{
-            left: 13%;
-        }
-        .der{
-            right: 13%;
-        }
         .hoja-fondo3,
         .hoja-fondo4,
         .hoja-fondo5,
         .hoja-fondo8,
         .hoja-fondo9,
         .hoja-fondo10,
-        .hoja-fondo11{
+        .hoja-fondo11,
+        .hoja-fondo13{
             display: none;
         }
         .hoja-fondo2{
-            left: 20%;
+            left: 26%;
+            top: 12%;
         }
         .hoja-fondo6{
-            left: 37%;
-            top: -28%;
+            left: 45%;
+            top: -10%;
+            transform: translate(-50%, -50%) rotate(-45deg);
         }
         .hoja-fondo7{
-            left: 62%;
+            left:72%;
+            top: 7%;
+            transform: translate(-50%, -50%) rotate(-90deg);
         }
         .hoja-fondo12{
-            right: -5%;
-        }
-        .hoja-fondo13{
-            right: -20%;
+            right: -38%;
+            transform: translate(-50%, -50%) rotate(-90deg);
         }
     }
 }
