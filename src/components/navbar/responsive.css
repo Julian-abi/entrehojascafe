@@ -1,57 +1,134 @@
-.menu-icon {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    padding: 10px;
+/* ============================================
+   TABLETS (768px - 1023px)
+   ============================================ */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .principal-nav {
+        width: 420px;
+        height: 55px;
+        bottom: 2%;
+    }
+
+    .principal-nav-linea {
+        width: 430px;
+        height: 65px;
+        bottom: 1.5%;
+    }
+
+    .principal-nav-productos,
+    .principal-nav-educacion,
+    .principal-nav-item,
+    .principal-nav-inicio {
+        font-size: 18px;
+    }
 }
 
-.menu-links {
-    display: flex;
-    gap: 20px;
-}
-
+/* ============================================
+   MÓVILES (hasta 767px)
+   ============================================ */
 @media screen and (max-width: 767px) {
 
+    /* Mostrar el ícono hamburguesa */
     .menu-icon {
         display: block;
-        color: var(--principal);
     }
 
-    .menu-links {
-        position: fixed;
-        top: 55px;
-        left: 0;
-        width: 70px;
-        background: var(--vinotinto);
-        display: none;
-        flex-direction: column;
-        z-index: 999;
-    }
-
-    .menu-links.activo {
-        display: flex;
-    }
-
-    .principal-nav-link {
-        padding: 14px 20px;
-    }
-
-    .principal-nav {
-        position: fixed;
-        top: 80vh;
-        left: 20px;
-        /* transform: none; */
-
-        width: 100px;
-        height: 50px;
-        border-radius: 19px;
-        margin: 20px;
-
-        justify-content: center;
-    }
-
+    /* Ocultar la línea decorativa en móvil */
     .principal-nav-linea {
         display: none;
     }
 
+    /* Navbar posicionada en esquina inferior izquierda */
+    .principal-nav {
+        position: fixed;
+        top: 25px;
+        transform: none;
+        border-radius: 50%;
+        justify-content: center;
+        padding: 0;
+    }
+
+    /* Menú desplegable */
+    .menu-links {
+        position: fixed;
+        top: 90px;
+        left: 20px;
+        height: 210px;
+        background: var(--vinotinto);
+        border: solid var(--principal) 1px;
+        border-radius: 15px;
+        padding: 15px 0;
+        flex-direction: column;
+        gap: 0;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+        /* Animación de entrada */
+        transform: translateY(20px);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .menu-links.activo {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /* Links individuales */
+    .principal-nav-link {
+        padding: 15px 20px;
+        border-bottom: 1px solid rgba(255, 230, 200, 0.1);
+        transition: background-color 0.3s ease, padding-left 0.3s ease;
+    }
+
+    .principal-nav-link:last-child {
+        border-bottom: none;
+    }
+
+    .principal-nav-link:hover {
+        background-color: rgba(208, 121, 22, 0.2);
+        padding-left: 30px;
+        transform: none;
+    }
+
+    .principal-nav-link::after {
+        display: none;
+    }
+
+    /* Tamaños de texto */
+    .principal-nav-productos,
+    .principal-nav-educacion,
+    .principal-nav-item,
+    .principal-nav-inicio {
+        font-size: 18px;
+    }
+}
+
+/* ============================================
+   MÓVILES PEQUEÑOS (hasta 480px)
+   ============================================ */
+@media screen and (max-width: 480px) {
+    .principal-nav {
+        bottom: 15px;
+        left: 15px;
+        width: 55px;
+        height: 55px;
+    }
+
+    .menu-icon {
+        font-size: 26px;
+    }
+
+    .menu-links {
+        bottom: 80px;
+        left: 15px;
+        width: 180px;
+    }
+
+    .principal-nav-productos,
+    .principal-nav-educacion,
+    .principal-nav-item,
+    .principal-nav-inicio {
+        font-size: 16px;
+    }
 }

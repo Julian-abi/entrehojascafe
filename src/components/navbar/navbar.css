@@ -12,6 +12,7 @@
     justify-content: space-evenly;
     align-items: center;
     z-index: 1000;
+    transition: all 0.3s ease;
 
     .principal-nav-link {
         text-decoration: none;
@@ -20,6 +21,23 @@
         align-items: center;
         justify-content: center;
         transition: transform 0.3s ease;
+        position: relative;
+    }
+
+    .principal-nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%) scaleX(0);
+        width: 80%;
+        height: 2px;
+        background-color: var(--dorado);
+        transition: transform 0.3s ease;
+    }
+
+    .principal-nav-link:hover::after {
+        transform: translateX(-50%) scaleX(1);
     }
 
     .principal-nav-link:hover {
@@ -29,7 +47,7 @@
     .principal-nav-productos,
     .principal-nav-educacion,
     .principal-nav-item,
-    .principal-nav-inicio{
+    .principal-nav-inicio {
         color: var(--principal);
         font-family: "Californian FB", serif;
         font-size: 22px;
@@ -39,10 +57,11 @@
     .principal-nav-productos p,
     .principal-nav-educacion p,
     .principal-nav-item p,
-    .principal-nav-inicio p{
+    .principal-nav-inicio p {
         margin: 0;
     }
 }
+
 .principal-nav-linea {
     width: 480px;
     height: 70px;
@@ -53,5 +72,24 @@
     border-radius: 19px;
     border: solid var(--principal) 1px;
     z-index: 999;
+    transition: all 0.3s ease;
 }
 
+/* Estilos para el menú hamburguesa */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    color: var(--principal);
+    transition: transform 0.3s ease;
+}
+
+.menu-icon:hover {
+    transform: rotate(90deg);
+}
+
+.menu-links {
+    display: flex;
+    gap: 20px;
+}
