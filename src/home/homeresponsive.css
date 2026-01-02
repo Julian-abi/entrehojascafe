@@ -3,7 +3,13 @@
 @media screen and (max-width: 767px) {
     body {
         overflow-x: hidden;
+        width: 100%;
+
+        .principal {
+            overflow-x: hidden; 
+        }
         .descripcionempresa {
+            overflow-x: hidden;
             .-conte {
                 height: auto;
                 gap: 20px;
@@ -34,6 +40,7 @@
         }
 
         .caracteristicas {
+            overflow-x: hidden;
             height: auto;
             .sostenibilidad {
                 width: 100%;
