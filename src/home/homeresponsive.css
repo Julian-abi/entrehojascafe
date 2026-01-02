@@ -1,48 +1,98 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {}
 
 @media screen and (max-width: 767px) {
-    .descripcionempresa {
-        .-conte {
+    body {
+        overflow-x: hidden;
+        .descripcionempresa {
+            .-conte {
+                height: auto;
+                gap: 20px;
+                padding: 20px 10px;
+
+                .-derconte {
+                    position: static;
+                    width: 90%;
+                    display: flex;
+                    right: 0px;
+                    margin-left: -12px;
+                    justify-content: center;
+                    align-items: center;
+
+                    p {
+                        width: 85%;
+                        font-size: 20px;
+                        text-align: center;
+                    }
+                }
+
+                .hojas-pri,
+                .hojas,
+                .-izqconte {
+                    display: none;
+                }
+            }
+        }
+
+        .caracteristicas {
             height: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px 0;
-            width: 100%;
-
-            & .-derconte { 
-                position: static;
+            .sostenibilidad {
                 width: 100%;
-                /* max-width: 500px; */
-                margin: 0 auto;
-                text-align: center;
+                padding: 0px;
 
-                p {
-                    font-size: 18px;
-                    line-height: 24px;
-                    text-align: center;
+                .imagenes {
+                    display: none;
+                }
+
+                .contenido {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 100%;
+                    margin-top: 30px;
+
+                    .linea {
+                        width: 300px;
+                    }
+
+                    p{
+                        width: 70%;
+                    }
                 }
             }
 
-            .hojas-pri,
-            .hojas,
-            .-izqconte{
-                display: none;
+            .autenticidad {
+                margin-top: 20px;
+                .linea {
+                    width: 300px;
+                }
+                p{
+                    width: 70%;
+                }
             }
-        }
-    }
 
-    .caracteristicas{
-        .sostenibilidad{
-            .imagenes{
-                display: none;
-            }
-        }
-        .estetica{
-            .imagenes{
-                display: none;
+            .estetica {
+                .contenido{
+                    width: 100%;
+                    margin-left: -50px;
+                    margin-top: -20px;
+                    
+                    .linea {
+                        width: 300px;
+                    }
+
+                    h2{
+                        width: 70%;
+                        text-align: center;
+                    }
+
+                    p{
+                        width: 70%;
+                    }
+                }
+                .imagenes {
+                    display: none;
+                }
             }
         }
     }

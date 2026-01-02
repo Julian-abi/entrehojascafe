@@ -24,15 +24,15 @@ const Carousel = () => {
                 modules={[Pagination, Navigation, EffectCoverflow]}
                 effect="coverflow"
                 centeredSlides
-                centeredSlidesBounds   // 🔥 MUY IMPORTANTE
+                centeredSlidesBounds   
                 grabCursor
                 loop
-                slidesPerView={3}    // 🔥 NO entero
+                slidesPerView={3}    
                 spaceBetween={40}
                 watchSlidesProgress
                 coverflowEffect={{
                     rotate: 0,
-                    stretch: 0,          // ❌ quitamos el negativo
+                    stretch: 0,          
                     depth: 300,
                     modifier: 1,
                     slideShadows: false,
@@ -40,7 +40,7 @@ const Carousel = () => {
                 navigation
             >
                 {colors.map((color, index) => (
-                    <SwiperSlide key={index}>
+                    <SwiperSlide key={index}> 
                         <div
                             className="color-box"
                             style={{ backgroundColor: color }}

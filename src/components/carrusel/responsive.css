@@ -27,9 +27,10 @@
     }
 
     .color-box {
-        height: 300px;
-        width: 120px;
+        height: 450px;
+        width:280px;
         border-radius: 20px;
+        margin-left: -90px;
     }
 
     .color-carousel .swiper-button-next::after,
@@ -41,5 +42,19 @@
     .color-carousel .swiper-slide-prev .color-box,
     .color-carousel .swiper-slide-next .color-box {
         opacity: 0.4;
+    }
+
+    .color-carousel .swiper-button-prev {
+        left: 12px;
+    }
+
+    .color-carousel .swiper-button-next {
+        right: 12px;
+    }
+
+    .swiper-slide-prev,
+    .swiper-slide-next {
+        opacity: 0 !important;
+        pointer-events: none;
     }
 }

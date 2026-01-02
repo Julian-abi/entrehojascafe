@@ -88,7 +88,6 @@ const Home = () => {
             <p>
               Comprometidos con el cuidado del medio ambiente y con prácticas responsables en el cultivo y producción del café, apoyando a las comunidades cafeteras locales
             </p>
-
           </div>
           <div className='imagenes'>
             <div className='imagen1'>
