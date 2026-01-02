@@ -16,7 +16,7 @@ body {
       height: 85%;
       background-color: var(--gris);
     }
-  }
+  } 
 
   .productos-iniciales {
     display: flex;
@@ -92,7 +92,7 @@ body {
 
       & .-derconte {
         font-family: "Lato-Regular", sans-serif;
-        width: 30vw;
+        width: 30%;
         position: relative;
         top: 160px;
         right: 70px;

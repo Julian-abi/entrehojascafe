@@ -103,7 +103,7 @@ const Home = () => {
           <div className='linea'></div>
           <p>
             Cada taza cuenta la historia de su origen. La marca se enfoca en resaltar la tradición cafetera, los sabores reales y el trabajo artesanal detrás de cada grano</p>
-        </div>
+        </div> 
         <div className='estetica'>
           <div className='imagenes'>
             <div className='imagen1'>

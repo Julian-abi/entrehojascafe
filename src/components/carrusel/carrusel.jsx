@@ -37,7 +37,6 @@ const Carousel = () => {
                     modifier: 1,
                     slideShadows: false,
                 }}
-                // pagination={{ clickable: true }}
                 navigation
             >
                 {colors.map((color, index) => (

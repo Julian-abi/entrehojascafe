@@ -10,11 +10,12 @@
             justify-content: center;
             gap: 20px;
             padding: 20px 0;
+            width: 100%;
 
-            .-derconte {
+            & .-derconte { 
                 position: static;
-                width: 90%;
-                max-width: 500px;
+                width: 100%;
+                /* max-width: 500px; */
                 margin: 0 auto;
                 text-align: center;
 
@@ -27,7 +28,20 @@
 
             .hojas-pri,
             .hojas,
-            .-izqconte {
+            .-izqconte{
+                display: none;
+            }
+        }
+    }
+
+    .caracteristicas{
+        .sostenibilidad{
+            .imagenes{
+                display: none;
+            }
+        }
+        .estetica{
+            .imagenes{
                 display: none;
             }
         }
